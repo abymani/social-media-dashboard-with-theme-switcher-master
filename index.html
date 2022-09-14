@@ -5,83 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/switchStyle.css">
+  <link rel="stylesheet" href="./styles/media.css">
+
+  <script src="https://kit.fontawesome.com/d6eed24291.js" crossorigin="anonymous"></script>
+  <script src="index.js" defer></script>
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body >
 
-  Social Media Dashboard
-  Total Followers: 23,004
+  <header>
+    <div class="title-container">
+      <h1 class="title"> Social Media Dashboard</h1>
+      <p class="small-text">Total Followers: 23,004</p>
+    </div>
+    <div class="toggle-container">
+      <span class="small-text">Dark Mode</span>
+      <label class="switch">
+        <input type="checkbox" class="toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </header>
+  <main>
+    <div class="followers-grid">
+      <div class="fb" role="button">
+        <div class="logo-with-name">
+          <i class="fa-brands fa-square-facebook"></i> 
+          <p class="profile-name">@nathanf</p>
+        </div>
+        <p class="num-of-followers">1987</p>
+        <p class="followers-text">Followers</p>
+        <p class="num-of-followers-today">12 Today</p>
+      </div>
+      <div class="twitter" role="button">
+        <div class="logo-with-name">
+          <i class="fa-brands fa-twitter"></i> 
+          <p class="profile-name">@nathanf</p>
+        </div>
+        <p class="num-of-followers">1044</p>
+        <p class="followers-text">Followers</p>
+        <p class="num-of-followers-today">99 Today</p>
+      </div>
+      <div class="insta" role="button">
+        <div class="logo-with-name">
+          <i class="fa-brands fa-instagram"></i>
+          <p class="profile-name">@realnathanf</p>
+        </div>
+        <p class="num-of-followers">11k</p>
+        <p class="followers-text">Followers</p>
+        <p class="num-of-followers-today">1099 Today</p>
+      </div>
+      <div class="youtube down" role="button">
+        <div class="logo-with-name">
+          <i class="fa-brands fa-youtube"></i>
+          <p class="profile-name">Nathan F.</p>
+        </div>
+        <p class="num-of-followers">8239</p>
+        <p class="followers-text">Followers</p>
+        <p class="num-of-followers-today">144 Today</p>
+      </div>
+    </div>
 
-  Dark Mode
 
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
+    <h2 class="overview-heading"> Overview - Today </h2>
+    <div class="overview-grid">
+      <div class="fb">
+        <p class="small-text">Page Views</p>
+        <i class="fa-brands fa-square-facebook"></i> 
+        <p class="today-like-views">87</p>
+        <p class="num-of-followers-today">3%</p>
+      </div>
+      <div class="fb down">
+        <p class="small-text">Likes</p>
+        <i class="fa-brands fa-square-facebook"></i> 
+        <p class="today-like-views">52</p>
+        <p class="num-of-followers-today">2%</p>
+      </div>
+      <div class="insta">
+        <p class="small-text">Likes</p>
+        <i class="fa-brands fa-instagram"></i> 
+        <p class="today-like-views">5462</p>
+        <p class="num-of-followers-today">2257%</p>
+      </div>
+      <div class="insta">
+        <p class="small-text">Profile Views</p>
+        <i class="fa-brands fa-instagram"></i> 
+        <p class="today-like-views">52k</p>
+        <p class="num-of-followers-today">1375%</p>
+      </div>
+      <div class="twitter">
+        <p class="small-text">Retweets</p>
+        <i class="fa-brands fa-twitter"></i>  
+        <p class="today-like-views">117</p>
+        <p class="num-of-followers-today">303%</p>
+      </div>
+      <div class="twitter">
+        <p class="small-text">Likes</p>
+        <i class="fa-brands fa-twitter"></i>  
+        <p class="today-like-views">507</p>
+        <p class="num-of-followers-today">553%</p>
+      </div>
+      <div class="youtube down">
+        <p class="small-text">Likes</p>
+        <i class="fa-brands fa-youtube"></i>
+        <p class="today-like-views">107</p>
+        <p class="num-of-followers-today">19%</p>
+      </div>
+      <div class="youtube down">
+        <p class="small-text">Total Views</p>
+        <i class="fa-brands fa-youtube"></i>
+        <p class="today-like-views">1407</p>
+        <p class="num-of-followers-today">12%</p>
+      </div>
+    </div>
+  </main>
+ 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.twitter.com/abymani1">Abdul rehman</a>.
   </div>
 </body>
 </html>
